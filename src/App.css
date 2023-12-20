@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  background-color:white;
+  justify-content: space-around;
+  position: relative;
+  z-index: 8;
+}
+
+.list-cont{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  padding: 0;
+}
+.list{
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  margin-top: 20px;
+  color: gray;
+  font-weight: 600;
+}
+  
+.logo{
+margin-top: 20px;
+width: 150px;
+height:30px ;
+}
+header .prembtn{
+  width: 200px;
+  height: 40px;
+  margin-top: 11px;
+}
+
+.article1{
+  background-color: rgb(245, 243, 243);
+  display: flex;
+  text-align: center;
+  justify-content:  space-between;  
+  justify-items: start;
+  flex-wrap:  wrap;
+  height: 500px;
+}
+.p-article{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  width: 30%;
+  left: 200px;
+  top: 100px;
+  position: relative; 
+}
+.p-article p {
+  color: gray;
+  margin-top:10px ;
+  margin-bottom: 30px;
+}
+.prembtn{
+  background: linear-gradient(to right,  hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: antiquewhite;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  width: auto;
+  max-width: 200px;
+}
+.imgCont{
+  overflow: hidden;
+  width: 40%;
+  background-image: url("./images/bg-intro-desktop.svg");
+  background-size:600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -100px;
+  left: 100x;
+  z-index: 3;
+}
+
+.image1{
+width: 600px;
+z-index: 1;
+overflow:hidden;
+}
+
+.card1{
+  background-color: rgb(231, 231, 231);
+  bottom: 200px;
+  width: 100%;
+  min-height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+.card2{
+  background-color: rgb(245, 243, 243);
+  padding-top: 100px;
+  width: 100%;
+  min-height: 600px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  /* flex-wrap: wrap; */
+}
+.size{
+  width: 80%
+}
+.title1{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  width: 50%;
+  padding-top: 50px;
+}
+.title1 p {
+  color: gray;
+  margin-top:10px ;
+  margin-bottom: 0px;
+}
+
+.cardContainer{
+  display: flex;
+  justify-content: start;
+  text-align:left;
+  /* flex-wrap: wrap; */
+
+  
+}
+
+.cardImg{
+  width: 50px;
+  padding-top:70px ;
+  padding-bottom:30px ;
+}
+
+.frCard{
+padding-right: 15px;
+flex-wrap: wrap;
+
+}
+.frCard-sc{
+  background-color: rgb(245, 243, 243);
+  margin-right: 20px;
+}
+.frCard p {
+  color: gray;
+  font-size: small;
+
+}
+
+.cardImg2{
+width: 100%;
+border-radius: 5px;
+}
+.csCard{
+  display: flex;
+}
+.title2{
+  text-align: left;
+  padding-bottom: 60px;
+}
+.frCard-sc h5, p{
+  padding-left:20px ;
+
+}
+.frCard-sc p{
+  color: gray;
+  font-size: small;
+}
+
+footer{
+  background-color: hsl(233, 26%, 24%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+.icon{
+  padding-right: 5px;
+}
+.links{
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
+  display: inline-block;
+}
+footer .logo{
+  color: white;
+}
+footer p{
+  color: gray;
+}
+footer  .column{
+  display: flex;
+flex-wrap: wrap;
+max-width: 10% ;
+gap: 10px;
+}
+footer .column-last{
+}
+footer .cont{
+  display: flex;
+  justify-content: space-evenly;  
+  flex-wrap: wrap;
+}
+footer .column-last p{
+  margin-top: 10px;
+}
