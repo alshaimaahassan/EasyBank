@@ -1,38 +1,364 @@
 .App {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  background-color:white;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+}
+
+.list-cont{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 300px;
+  justify-content: space-around;
+  margin-top: 20px;
+  color: gray;
+  font-weight: 600;
+}
+.list-cont li:hover{
+color: black;
+cursor: pointer;
+}
+  
+.logo{
+margin-top: 20px;
+width: 150px;
+height:30px ;
+}
+header .prembtn{
+  width: 200px;
+  height: 40px;
+  margin-top: 11px;
+}
+header .hamburg{
+  margin-top: 15px;
+  width: 40px;
+  height: 20px;
+  display: none;
+}
+header .list-ham{
+  list-style: none;
+  position: absolute;
+  right: 10px;
+  border: 2px rgb(138, 137, 137) solid;
+  border-radius: 8px;
   text-align: center;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  background-color: white;
+  padding: 0;
+  padding: 5px;
+  display: none;
+}
+header .list-ham li{
+  border-top: 2px rgb(138, 137, 137) solid;
+}
+header .list-ham img{
+  width: 10px;
+}
+header  button{
+border: none;
+background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* start header responsive */
+@media screen and (max-width:700px){
+  header{
+    justify-content: space-between;
+    padding: 10px;
   }
+  header .list-cont{
+    display: none;
+  }
+  header .prembtn{
+    display: none;
+  }
+  header .hamburg{
+    display: block;
+  }
+  header .hamburg ul{
+    display: none;
+  }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* end header responsive */
+
+.article1{
+  background-color: rgb(245, 243, 243);
+  display: flex;
+  justify-content:  space-between;  
+  justify-items: start;
+  flex-wrap:  wrap;
+  width: 100%;
+  overflow: hidden;
+  /* margin-top: 50px; */
+  padding: 150px 90px ;
+}
+.p-article{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
+  width: 30%;
+}
+.p-article p {
+  color: gray;
+  margin-top:10px ;
+  margin-bottom: 30px;
+  padding: 0;
+
+}
+.prembtn{
+  background: linear-gradient(to right,  hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color:azure;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  width: auto;
+  max-width: 200px;
+}
+.imgCont{
+  overflow: hidden;
+  width: 40%;
+  background-image: url("./images/bg-intro-desktop.svg");
+  background-size:cover;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100%;
+}
+
+.image1{
+width: 600px;
+z-index: 1;
+overflow:hidden;
+position: absolute;
+}
+/* start article responsive */
+@media screen and (max-width :700px){
+.article1{
+    justify-content: center;
+    flex-direction: column-reverse ;
+    gap: 200px;
+  }
+.imgCont{
+background-image: url("./images/bg-intro-desktop.svg");
+width: 100%;
+}
+.image1{
+  width: 300px;
+}
+.p-article{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding:  0 ;
+
+}
+}
+/* end article responsive */
+
+
+.card1{
+  background-color: rgb(231, 231, 231);
+  bottom: 200px;
+  width: 100%;
+  min-height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.size{
+  width: 80%
+}
+.title1{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  width: 100%;
+  padding-top: 50px;
+}
+.title1 p {
+  color: gray;
+  margin-top:10px ;
+  margin-bottom: 0px;
+  padding: 0;
+}
+.cardContainer{
+  display: flex;
+  justify-content: start;
+  text-align:left;
+}
+.cardImg{
+  width: 50px;
+  padding-top:70px ;
+  padding-bottom:30px ;
+}
+.frCard{
+padding-right: 15px;
+flex-wrap: wrap;
+}
+
+.frCard p {
+  color: gray;
+  font-size: small;
+}
+/* start card1 responsive */
+
+@media screen and (max-width:700px){
+  .card1{
+justify-content: center;
+text-align: center;
+  }
+  .size{
+    text-align: center;
+  }
+  .title1{
+  text-align: center;
+  justify-content: center;
+  }
+  .cardContainer{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .frCard{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* end card1 responsive */
+.card2{
+  background-color: rgb(235, 231, 231);
+  padding-top: 100px;
+  width: 100%;
+  min-height: 600px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.frCard-sc{
+  background-color: rgb(245, 243, 243);
+  margin-right: 20px;
+}
+.cardImg2{
+width: 100%;
+border-radius: 5px;
+}
+.csCard{
+  display: flex;
+}
+.title2{
+  text-align: left;
+  padding-bottom: 60px;
+}
+.frCard-sc h5, p{
+  padding-left:20px ;
+
+}
+.frCard-sc p{
+  color: gray;
+  font-size: small;
+}
+/* start card2 responsive */
+@media screen and (max-width:700px){
+  .frCard-sc{
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  .cardContainer{
+    margin-bottom: 70px;
+  }
+}
+/* end card2 responsive */
+
+footer{
+  background-color: hsl(233, 26%, 24%);
+  padding: 40px 0;
+
+}
+.icon{
+  padding-right: 10px;
+}
+.links{
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
+}
+.links:hover{
+  color: rgb(52, 177, 94);
+}
+.icon:hover{
+  color: rgb(52, 177, 94);
+}
+footer .logo{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+footer p{
+  color: gray;
+}
+footer  .column2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer .container{
+  display: flex;
+  justify-content: space-evenly;  
 }
+footer .column-last p{
+  margin-top: 10px;
+}
+/* star footer responsive */
+@media screen and (max-width:700px) {
+  footer {
+    padding: 0;
+  }
+
+  footer .container {
+    justify-content: center;
+    display: inline;
+  }
+
+  footer .column2 {
+    text-align: center;
+  }
+  footer .column2 .logo{
+    text-align: center;
+  }
+  footer .column-last {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  footer .prembtn {
+    margin: 10px 0;
+  }
+
+  footer .links {
+    padding-right: 0;
+  }
+
+  footer .icon {
+    padding-right: 15px;
+    padding-bottom: 12px;
+  }
+
+}
+/* end footer responsive */
